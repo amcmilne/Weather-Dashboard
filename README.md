@@ -1,7 +1,7 @@
 # Weather-Dasboard
  
-https://amcmilne.github.io/Weather-Dashboard/
-https://github.com/amcmilne/Weather-Dashboard
+- https://amcmilne.github.io/Weather-Dashboard/
+- https://github.com/amcmilne/Weather-Dashboard
 
 
 ## Acceptance Criteria
