@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<div class="container-fluid">
+
+    <body>
+        <header class="hero is-dark">
+            <div class="hero-body">
+                <h1 class="title">
+                    Weather Dashboard
+                </h1>
+                <h2 class="subtitle">
+                    powered by
+                </h2>
+            </div>
+        </header>
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">Select Your City:</p>
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="City">
+                                </div>
+                                <div class="control">
+                                    <button class="button is-info">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <nav class="panel">
+                                <p class="panel-heading">
+                                    Previous Cities
+                                </p>
+                                <a class="panel-block is-active">
+                                    <span class="panel-icon">
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </span>
+
+                                </a>
+                                <a class="panel-block">
+                                    <span class="panel-icon">
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </span>
+
+                                </a>
+                                <a class="panel-block">
+                                    <span class="panel-icon">
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </span>
+
+                                </a>
+                                <a class="panel-block">
+                                    <span class="panel-icon">
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </span>
+
+                                </a>
+                                <a class="panel-block">
+                                    <span class="panel-icon">
+                                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                                    </span>
+
+                                </a>
+                                <a class="panel-block">
+                                    <span class="panel-icon">
+                                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                                    </span>
+
+                                </a>
+                                <label class="panel-block">
+                                    <input type="checkbox">
+                                    Save Favorite
+                                </label>
+                                <div class="panel-block">
+                                    <button class="button is-link is-outlined is-fullwidth">
+                                        Reset all filters
+                                    </button>
+                                </div>
+                            </nav>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-info">
+                            <p class="title">TODAY in... </p>
+                            <p class="subtitle">your city here</p>
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-success">
+                        <p class="title">5 Day Forecast:</p>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="columns is-mobile">
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <div class="card-image">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="media">
+                                        </div>
+                                        <div class="content">
+                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                            <br>
+                                            <br>
+                                            <p id="temperature">Temperature:</p>
+                                            <br>
+                                            <p id="humidity">Humidity:</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="card">
+                                    <div class="card-image">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="media">
+                                        </div>
+                                        <div class="content">
+                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                            <br>
+                                            <br>
+                                            <p id="temperature">Temperature:</p>
+                                            <br>
+                                            <p id="humidity">Humidity:</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="column">
+                                <div class="card">
+                                    <div class="card-image">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="media">
+                                        </div>
+                                        <div class="content">
+                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                            <br>
+                                            <br>
+                                            <p id="temperature">Temperature:</p>
+                                            <br>
+                                            <p id="humidity">Humidity:</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <div class="card-image">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="media">
+                                        </div>
+                                        <div class="content">
+                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                            <br>
+                                            <br>
+                                            <p id="temperature">Temperature:</p>
+                                            <br>
+                                            <p id="humidity">Humidity:</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <div class="card-image">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="media">
+                                        </div>
+                                        <div class="content">
+                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                            <br>
+                                            <br>
+                                            <p id="temperature">Temperature:</p>
+                                            <br>
+                                            <p id="humidity">Humidity:</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="content">
+                                <!-- Content -->
+                            </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </body>
+</div>
+
+</html>
