@@ -22,3 +22,9 @@ WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 ```
  
+ ## Helpful Links
+* [MDN AJAX: Getting Started](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
+* [Wikipedia: Web API](https://en.wikipedia.org/wiki/Web_API)
+* [Wikipedia: AJAX](https://en.wikipedia.org/wiki/Ajax_(programming))
+* [MDN: XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+* [jQuery](https://api.jquery.com/)

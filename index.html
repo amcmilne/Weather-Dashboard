@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,600;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,600;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <header class="hero is-dark is-12">
@@ -24,7 +23,8 @@
         </h2>
     </div>
 </header>
-<body>   
+
+<body>
     <div class="container-fluid">
         <div class="tile is-ancestor">
             <div class="tile is-vertical">
@@ -34,10 +34,10 @@
                             <p class="title">Select Your City:</p>
                             <div class="field has-addons">
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="City">
+                                    <input id= "city" class="input" type="text" placeholder="City">
                                 </div>
                                 <div class="control">
-                                    <button class="button is-info">
+                                    <button id= "search" class="button is-info">
                                         <i class="fas fa-search"></i>
                                     </button>
                                 </div>
@@ -48,42 +48,7 @@
                                 <p class="panel-heading">
                                     Previous Cities
                                 </p>
-                                <a class="panel-block">
-                                    <span class="panel-icon">
-                                        <i class="fas fa-map-marked-alt"></i>
-                                    </span>
-
-                                </a>
-                                <a class="panel-block">
-                                    <span class="panel-icon">
-                                        <i class="fas fa-map-marked-alt"></i>
-                                    </span>
-
-                                </a>
-                                <a class="panel-block">
-                                    <span class="panel-icon">
-                                        <i class="fas fa-map-marked-alt"></i>
-                                    </span>
-
-                                </a>
-                                <a class="panel-block">
-                                    <span class="panel-icon">
-                                        <i class="fas fa-map-marked-alt"></i>
-                                    </span>
-
-                                </a>
-                                <a class="panel-block">
-                                    <span class="panel-icon">
-                                        <i class="fas fa-map-marked-alt"></i>
-                                    </span>
-
-                                </a>
-                                <a class="panel-block">
-                                    <span class="panel-icon">
-                                        <i class="fas fa-map-marked-alt"></i>
-                                    </span>
-
-                                </a>
+                                <div id="searchHistory"></div>
                                 <label class="panel-block">
                                     <input type="checkbox">
                                     Save Favorite
@@ -103,10 +68,10 @@
                             <figure class="image is-48x48">
                                 <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
                             </figure>
-                            <p class="temperture">Temperature:</p>
-                            <p class="humidity">Humidity:</p>
-                            <p class="windspeed">Wind Speed:</p>
-                            <p class="uvIndex">UV Index:</p>
+                            <div class="temperture">Temperature:</div>
+                            <div class="humidity">Humidity:</div>
+                            <div class="windspeed">Wind Speed:</div>
+                            <div class="uvIndex">UV Index:</div>
                         </article>
                     </div>
                 </div>
@@ -211,17 +176,12 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
-                            <div class="content">
-                                <!-- Content -->
-                            </div>
                     </article>
                 </div>
             </div>
         </div>
-</body>
-</div>
-
-</html>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript"></script>
+        <script src="script.js"></script>
+</body >
+</html >
