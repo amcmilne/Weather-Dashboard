@@ -18,9 +18,6 @@
         <h1 class="headertitle">
             Weather Dashboard
         </h1>
-        <h2 class="subtitle">
-            powered by
-        </h2>
     </div>
 </header>
 
@@ -34,12 +31,14 @@
                             <p class="title">Select Your City:</p>
                             <div class="field has-addons">
                                 <div class="control">
-                                    <input id= "city" class="input" type="text" placeholder="City">
+                                    <form>
+                                        <input id="city" class="input" type="text" placeholder="City">
                                 </div>
                                 <div class="control">
-                                    <button id= "search" class="button is-info">
+                                    <button id="search" class="button is-info">
                                         <i class="fas fa-search"></i>
                                     </button>
+                                    </form>
                                 </div>
                             </div>
                         </article>
@@ -50,132 +49,24 @@
                                 </p>
                                 <div id="searchHistory"></div>
                                 <label class="panel-block">
-                                    <input type="checkbox">
-                                    Save Favorite
-                                </label>
-                                <div class="panel-block">
-                                    <button class="button is-link is-outlined is-fullwidth is-dark">
-                                        Reset all filters
-                                    </button>
-                                </div>
                             </nav>
                         </article>
                     </div>
                     <div class="tile is-parent is-8">
                         <article class="tile is-child notification is-info">
                             <p class="title">Today in... </p>
-                            <p class="subtitle">your city here</p>
-                            <figure class="image is-48x48">
-                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                            </figure>
-                            <div class="temperture">Temperature:</div>
+                            <p class="city" id="city"></p>
+                            <div class="temperature">Temperature:</div>
                             <div class="humidity">Humidity:</div>
                             <div class="windspeed">Wind Speed:</div>
-                            <div class="uvIndex">UV Index:</div>
+                            <div class="uvIndex" id="uvIndex">UV Index:</div>
                         </article>
                     </div>
                 </div>
                 <div class="tile is-parent is-12">
-                    <article class="tile is-child notification is-link">
+                    <article id="forecast" class="tile is-child notification is-link">
                         <p class="title">5 Day Forecast:</p>
-                        <div class="columns">
-                            <div class="column">
-                                <div class="columns is-mobile">
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="card">
-                                    <div class="card-image">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="media">
-                                        </div>
-                                        <div class="content">
-                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                            <br>
-                                            <br>
-                                            <p id="temperature">Temperature:</p>
-                                            <br>
-                                            <p id="humidity">Humidity:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="column">
-                                <div class="card">
-                                    <div class="card-image">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="media">
-                                        </div>
-                                        <div class="content">
-                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                            <br>
-                                            <br>
-                                            <p id="temperature">Temperature:</p>
-                                            <br>
-                                            <p id="humidity">Humidity:</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="column">
-                                <div class="card">
-                                    <div class="card-image">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="media">
-                                        </div>
-                                        <div class="content">
-                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                            <br>
-                                            <br>
-                                            <p id="temperature">Temperature:</p>
-                                            <br>
-                                            <p id="humidity">Humidity:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="card">
-                                    <div class="card-image">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="media">
-                                        </div>
-                                        <div class="content">
-                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                            <br>
-                                            <br>
-                                            <p id="temperature">Temperature:</p>
-                                            <br>
-                                            <p id="humidity">Humidity:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="card">
-                                    <div class="card-image">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="media">
-                                        </div>
-                                        <div class="content">
-                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                            <br>
-                                            <br>
-                                            <p id="temperature">Temperature:</p>
-                                            <br>
-                                            <p id="humidity">Humidity:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="columns" id="forecastDays">
                     </article>
                 </div>
             </div>
@@ -183,5 +74,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript"></script>
         <script src="script.js"></script>
-</body >
-</html >
+</body>
+
+</html>

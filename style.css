@@ -18,6 +18,21 @@ padding-bottom: 20px;
 
 .title {
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 30px;
+    font-size: 50px;
+    text-align: center;
+}
 
+.panel-icon {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.city, .temperature, .humidity, .windspeed, .uvIndex {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.panel-heading {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 40px;
 }
