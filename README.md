@@ -32,9 +32,11 @@ THEN I am presented with the last searched city forecast
  - Bulma
  - Google Fonts
 
- 
+
 
  <img src= "/img1.png">
+ <img src= "/img2.png">
+ <img src= "/img3.png">
 
  License
 ----
