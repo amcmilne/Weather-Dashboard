@@ -13,12 +13,12 @@ padding-bottom: 20px;
 
 .headertitle {
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 80px; 
+    font-size: 5vw; 
 }   
 
 .title {
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 50px;
+    font-size: 2vw;
     text-align: center;
 }
 
@@ -34,5 +34,5 @@ padding-bottom: 20px;
 }
 .panel-heading {
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 40px;
+    font-size: 2vw;
 }
